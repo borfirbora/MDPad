@@ -1,0 +1,9 @@
+C:\Users\bora\source\repos\MDPad\bin\Debug\MDPad.exe
+C:\Users\bora\source\repos\MDPad\bin\Debug\MDPad.pdb
+C:\Users\bora\source\repos\MDPad\obj\Debug\MDPad.csprojAssemblyReference.cache
+C:\Users\bora\source\repos\MDPad\obj\Debug\MDPad.Form1.resources
+C:\Users\bora\source\repos\MDPad\obj\Debug\MDPad.Properties.Resources.resources
+C:\Users\bora\source\repos\MDPad\obj\Debug\MDPad.csproj.GenerateResource.cache
+C:\Users\bora\source\repos\MDPad\obj\Debug\MDPad.csproj.CoreCompileInputs.cache
+C:\Users\bora\source\repos\MDPad\obj\Debug\MDPad.exe
+C:\Users\bora\source\repos\MDPad\obj\Debug\MDPad.pdb
