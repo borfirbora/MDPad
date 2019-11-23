@@ -30,19 +30,18 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.dosyaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.düzenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ekleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.yardımToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.yeniToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.açToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kaydetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.farklıKaydetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.çıkışToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.düzenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tümünüSeçToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kopyalaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.yapıştırToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.geriAlToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ekleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.başlıkToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.seviye1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.seviye2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -57,6 +56,7 @@
             this.numaralıToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.numarasızToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabloToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.yardımToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.içindekilerVeDizinToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.görüşBildirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hakkındaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -89,6 +89,36 @@
             this.dosyaToolStripMenuItem.Size = new System.Drawing.Size(51, 20);
             this.dosyaToolStripMenuItem.Text = "&Dosya";
             // 
+            // yeniToolStripMenuItem
+            // 
+            this.yeniToolStripMenuItem.Name = "yeniToolStripMenuItem";
+            this.yeniToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.yeniToolStripMenuItem.Text = "Ye&ni";
+            // 
+            // açToolStripMenuItem
+            // 
+            this.açToolStripMenuItem.Name = "açToolStripMenuItem";
+            this.açToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.açToolStripMenuItem.Text = "A&ç";
+            // 
+            // kaydetToolStripMenuItem
+            // 
+            this.kaydetToolStripMenuItem.Name = "kaydetToolStripMenuItem";
+            this.kaydetToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.kaydetToolStripMenuItem.Text = "K&aydet";
+            // 
+            // farklıKaydetToolStripMenuItem
+            // 
+            this.farklıKaydetToolStripMenuItem.Name = "farklıKaydetToolStripMenuItem";
+            this.farklıKaydetToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.farklıKaydetToolStripMenuItem.Text = "Fa&rklı Kaydet...";
+            // 
+            // çıkışToolStripMenuItem
+            // 
+            this.çıkışToolStripMenuItem.Name = "çıkışToolStripMenuItem";
+            this.çıkışToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.çıkışToolStripMenuItem.Text = "&Çıkış";
+            // 
             // düzenToolStripMenuItem
             // 
             this.düzenToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -100,6 +130,36 @@
             this.düzenToolStripMenuItem.Name = "düzenToolStripMenuItem";
             this.düzenToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
             this.düzenToolStripMenuItem.Text = "Dü&zen";
+            // 
+            // tümünüSeçToolStripMenuItem
+            // 
+            this.tümünüSeçToolStripMenuItem.Name = "tümünüSeçToolStripMenuItem";
+            this.tümünüSeçToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.tümünüSeçToolStripMenuItem.Text = "Tümünü Se&ç";
+            // 
+            // kesToolStripMenuItem
+            // 
+            this.kesToolStripMenuItem.Name = "kesToolStripMenuItem";
+            this.kesToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.kesToolStripMenuItem.Text = "&ke&s";
+            // 
+            // kopyalaToolStripMenuItem
+            // 
+            this.kopyalaToolStripMenuItem.Name = "kopyalaToolStripMenuItem";
+            this.kopyalaToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.kopyalaToolStripMenuItem.Text = "K&opyala";
+            // 
+            // yapıştırToolStripMenuItem
+            // 
+            this.yapıştırToolStripMenuItem.Name = "yapıştırToolStripMenuItem";
+            this.yapıştırToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.yapıştırToolStripMenuItem.Text = "ya&pıştır";
+            // 
+            // geriAlToolStripMenuItem
+            // 
+            this.geriAlToolStripMenuItem.Name = "geriAlToolStripMenuItem";
+            this.geriAlToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.geriAlToolStripMenuItem.Text = "Geri &Al";
             // 
             // ekleToolStripMenuItem
             // 
@@ -113,76 +173,6 @@
             this.ekleToolStripMenuItem.Name = "ekleToolStripMenuItem";
             this.ekleToolStripMenuItem.Size = new System.Drawing.Size(40, 20);
             this.ekleToolStripMenuItem.Text = "E&kle";
-            // 
-            // yardımToolStripMenuItem
-            // 
-            this.yardımToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.içindekilerVeDizinToolStripMenuItem,
-            this.görüşBildirToolStripMenuItem,
-            this.hakkındaToolStripMenuItem});
-            this.yardımToolStripMenuItem.Name = "yardımToolStripMenuItem";
-            this.yardımToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
-            this.yardımToolStripMenuItem.Text = "Ya&rdım";
-            // 
-            // yeniToolStripMenuItem
-            // 
-            this.yeniToolStripMenuItem.Name = "yeniToolStripMenuItem";
-            this.yeniToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.yeniToolStripMenuItem.Text = "Ye&ni";
-            // 
-            // açToolStripMenuItem
-            // 
-            this.açToolStripMenuItem.Name = "açToolStripMenuItem";
-            this.açToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.açToolStripMenuItem.Text = "A&ç";
-            // 
-            // kaydetToolStripMenuItem
-            // 
-            this.kaydetToolStripMenuItem.Name = "kaydetToolStripMenuItem";
-            this.kaydetToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.kaydetToolStripMenuItem.Text = "K&aydet";
-            // 
-            // farklıKaydetToolStripMenuItem
-            // 
-            this.farklıKaydetToolStripMenuItem.Name = "farklıKaydetToolStripMenuItem";
-            this.farklıKaydetToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.farklıKaydetToolStripMenuItem.Text = "Fa&rklı Kaydet...";
-            // 
-            // çıkışToolStripMenuItem
-            // 
-            this.çıkışToolStripMenuItem.Name = "çıkışToolStripMenuItem";
-            this.çıkışToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.çıkışToolStripMenuItem.Text = "&Çıkış";
-            // 
-            // tümünüSeçToolStripMenuItem
-            // 
-            this.tümünüSeçToolStripMenuItem.Name = "tümünüSeçToolStripMenuItem";
-            this.tümünüSeçToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.tümünüSeçToolStripMenuItem.Text = "Tümünü Se&ç";
-            // 
-            // kesToolStripMenuItem
-            // 
-            this.kesToolStripMenuItem.Name = "kesToolStripMenuItem";
-            this.kesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.kesToolStripMenuItem.Text = "&ke&s";
-            // 
-            // kopyalaToolStripMenuItem
-            // 
-            this.kopyalaToolStripMenuItem.Name = "kopyalaToolStripMenuItem";
-            this.kopyalaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.kopyalaToolStripMenuItem.Text = "K&opyala";
-            // 
-            // yapıştırToolStripMenuItem
-            // 
-            this.yapıştırToolStripMenuItem.Name = "yapıştırToolStripMenuItem";
-            this.yapıştırToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.yapıştırToolStripMenuItem.Text = "ya&pıştır";
-            // 
-            // geriAlToolStripMenuItem
-            // 
-            this.geriAlToolStripMenuItem.Name = "geriAlToolStripMenuItem";
-            this.geriAlToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.geriAlToolStripMenuItem.Text = "Geri &Al";
             // 
             // başlıkToolStripMenuItem
             // 
@@ -200,37 +190,37 @@
             // seviye1ToolStripMenuItem
             // 
             this.seviye1ToolStripMenuItem.Name = "seviye1ToolStripMenuItem";
-            this.seviye1ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.seviye1ToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.seviye1ToolStripMenuItem.Text = "Seviye &1";
             // 
             // seviye2ToolStripMenuItem
             // 
             this.seviye2ToolStripMenuItem.Name = "seviye2ToolStripMenuItem";
-            this.seviye2ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.seviye2ToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.seviye2ToolStripMenuItem.Text = "Seviye &2";
             // 
             // seviye3ToolStripMenuItem
             // 
             this.seviye3ToolStripMenuItem.Name = "seviye3ToolStripMenuItem";
-            this.seviye3ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.seviye3ToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.seviye3ToolStripMenuItem.Text = "Seviye &3";
             // 
             // seviye4ToolStripMenuItem
             // 
             this.seviye4ToolStripMenuItem.Name = "seviye4ToolStripMenuItem";
-            this.seviye4ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.seviye4ToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.seviye4ToolStripMenuItem.Text = "Seviye &4";
             // 
             // seviye5ToolStripMenuItem
             // 
             this.seviye5ToolStripMenuItem.Name = "seviye5ToolStripMenuItem";
-            this.seviye5ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.seviye5ToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.seviye5ToolStripMenuItem.Text = "Seviye &5";
             // 
             // seviye6ToolStripMenuItem
             // 
             this.seviye6ToolStripMenuItem.Name = "seviye6ToolStripMenuItem";
-            this.seviye6ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.seviye6ToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.seviye6ToolStripMenuItem.Text = "Seviye &6";
             // 
             // baglantıToolStripMenuItem
@@ -238,12 +228,14 @@
             this.baglantıToolStripMenuItem.Name = "baglantıToolStripMenuItem";
             this.baglantıToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.baglantıToolStripMenuItem.Text = "Bağ&lantı...";
+            this.baglantıToolStripMenuItem.Click += new System.EventHandler(this.baglantıToolStripMenuItem_Click);
             // 
             // resimToolStripMenuItem
             // 
             this.resimToolStripMenuItem.Name = "resimToolStripMenuItem";
             this.resimToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.resimToolStripMenuItem.Text = "Re&sim...";
+            this.resimToolStripMenuItem.Click += new System.EventHandler(this.resimToolStripMenuItem_Click);
             // 
             // dipnotToolStripMenuItem
             // 
@@ -263,13 +255,13 @@
             // numaralıToolStripMenuItem
             // 
             this.numaralıToolStripMenuItem.Name = "numaralıToolStripMenuItem";
-            this.numaralıToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.numaralıToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.numaralıToolStripMenuItem.Text = "Numara&lı";
             // 
             // numarasızToolStripMenuItem
             // 
             this.numarasızToolStripMenuItem.Name = "numarasızToolStripMenuItem";
-            this.numarasızToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.numarasızToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.numarasızToolStripMenuItem.Text = "Numara&sız";
             // 
             // tabloToolStripMenuItem
@@ -278,22 +270,32 @@
             this.tabloToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.tabloToolStripMenuItem.Text = "Ta&blo...";
             // 
+            // yardımToolStripMenuItem
+            // 
+            this.yardımToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.içindekilerVeDizinToolStripMenuItem,
+            this.görüşBildirToolStripMenuItem,
+            this.hakkındaToolStripMenuItem});
+            this.yardımToolStripMenuItem.Name = "yardımToolStripMenuItem";
+            this.yardımToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
+            this.yardımToolStripMenuItem.Text = "Ya&rdım";
+            // 
             // içindekilerVeDizinToolStripMenuItem
             // 
             this.içindekilerVeDizinToolStripMenuItem.Name = "içindekilerVeDizinToolStripMenuItem";
-            this.içindekilerVeDizinToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.içindekilerVeDizinToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.içindekilerVeDizinToolStripMenuItem.Text = "İçindekiler ve Di&zin";
             // 
             // görüşBildirToolStripMenuItem
             // 
             this.görüşBildirToolStripMenuItem.Name = "görüşBildirToolStripMenuItem";
-            this.görüşBildirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.görüşBildirToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.görüşBildirToolStripMenuItem.Text = "G&örüş Bildir...";
             // 
             // hakkındaToolStripMenuItem
             // 
             this.hakkındaToolStripMenuItem.Name = "hakkındaToolStripMenuItem";
-            this.hakkındaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.hakkındaToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.hakkındaToolStripMenuItem.Text = "Hakkın&da";
             // 
             // MDEdit
