@@ -49,6 +49,7 @@ namespace MDPad
                     if (dosya_adi == null)
                     {
                         farklıKaydetToolStripMenuItem_Click(null, null);
+                        Application.Exit();
                     }
                     else
                     {
@@ -106,8 +107,9 @@ namespace MDPad
 
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+            private void Form1_Load(object sender, EventArgs e)
         {
+            icerik = false;
             this.Text = adsiz + " - MDPad";
             MDEdit.Text = "";
         }
@@ -130,7 +132,7 @@ namespace MDPad
 
         private void farklıKaydetToolStripMenuItem_Click(object sender, EventArgs e)
         {
-                        if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 dosya_adi = saveFileDialog1.FileName;
                 kaydetToolStripMenuItem_Click(null, null);
@@ -164,7 +166,6 @@ namespace MDPad
                 MDEdit.Text = sr.ReadToEnd();
                 sr.Close();
                 this.Text = dosya_adi + " - MDPad";
-                icerik = false;
             }
         }
 
