@@ -52,7 +52,7 @@ namespace MDPad
                     }
                     else
                     {
-                        StreamWriter sw = new StreamWriter(dosya_adi, false, Encoding.GetEncoding(1254));
+                        StreamWriter sw = new StreamWriter(dosya_adi, false, Encoding.GetEncoding("utf-8"));
                         sw.Write(MDEdit.Text);
                         sw.Flush();
                         sw.Close();
@@ -83,7 +83,7 @@ namespace MDPad
                     }
                     else
                     {
-                        StreamWriter sw = new StreamWriter(dosya_adi, false, Encoding.GetEncoding(1254));
+                        StreamWriter sw = new StreamWriter(dosya_adi, false, Encoding.GetEncoding("utf-8"));
                         sw.Write(MDEdit.Text);
                         sw.Flush();
                         sw.Close();
@@ -120,7 +120,7 @@ namespace MDPad
             }
             else
             {
-                StreamWriter sw = new StreamWriter(dosya_adi, false, Encoding.GetEncoding(1254));
+                StreamWriter sw = new StreamWriter(dosya_adi, false, Encoding.GetEncoding("utf-8"));
                 sw.Write(MDEdit.Text);
                 sw.Flush();
                 sw.Close();
@@ -130,7 +130,25 @@ namespace MDPad
 
         private void farklıKaydetToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+            if (icerik == true)
+            {
+                DialogResult soru = MessageBox.Show("Yaptığınız değişiklikleri kaydetmek istiyor musunuz?", " MDPad", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (soru == DialogResult.Yes)
+                {
+                    if (dosya_adi == null)
+                    {
+                        farklıKaydetToolStripMenuItem_Click(null, null);
+                    }
+                    else
+                    {
+                        StreamWriter sw = new StreamWriter(dosya_adi, false, Encoding.GetEncoding("utf-8"));
+                        sw.Write(MDEdit.Text);
+                        sw.Flush();
+                        sw.Close();
+                    }
+                }
+            }
+                        if (saveFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 dosya_adi = saveFileDialog1.FileName;
                 kaydetToolStripMenuItem_Click(null, null);
@@ -139,10 +157,28 @@ namespace MDPad
 
         private void açToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if (icerik == true)
+            {
+                DialogResult soru = MessageBox.Show("Yaptığınız değişiklikler var. Bunları kaydetmek istiyor musunuz?", " MDPad", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (soru == DialogResult.Yes)
+                {
+                    if (dosya_adi == null)
+                    {
+                        farklıKaydetToolStripMenuItem_Click(null, null);
+                    }
+                    else
+                    {
+                        StreamWriter sw = new StreamWriter(dosya_adi, false, Encoding.GetEncoding("utf-8"));
+                        sw.Write(MDEdit.Text);
+                        sw.Flush();
+                        sw.Close();
+                    }
+                }
+            }
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 dosya_adi = openFileDialog1.FileName;
-                StreamReader sr = new StreamReader(openFileDialog1.FileName, Encoding.GetEncoding(1254));
+                StreamReader sr = new StreamReader(openFileDialog1.FileName, Encoding.GetEncoding("utf-8"));
                 MDEdit.Text = sr.ReadToEnd();
                 sr.Close();
                 this.Text = dosya_adi + " - MDPad";
@@ -153,6 +189,31 @@ namespace MDPad
         private void saveFileDialog1_FileOk(object sender, CancelEventArgs e)
         {
 
+        }
+
+        private void tümünüSeçToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MDEdit.SelectAll();
+        }
+
+        private void kesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MDEdit.Cut();
+        }
+
+        private void kopyalaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MDEdit.Copy();
+        }
+
+        private void yapıştırToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MDEdit.Paste();
+        }
+
+        private void geriAlToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MDEdit.Undo();
         }
     }
 }

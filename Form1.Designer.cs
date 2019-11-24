@@ -142,32 +142,37 @@
             // tümünüSeçToolStripMenuItem
             // 
             this.tümünüSeçToolStripMenuItem.Name = "tümünüSeçToolStripMenuItem";
-            this.tümünüSeçToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.tümünüSeçToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.tümünüSeçToolStripMenuItem.Text = "Tümünü Se&ç";
+            this.tümünüSeçToolStripMenuItem.Click += new System.EventHandler(this.tümünüSeçToolStripMenuItem_Click);
             // 
             // kesToolStripMenuItem
             // 
             this.kesToolStripMenuItem.Name = "kesToolStripMenuItem";
-            this.kesToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.kesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.kesToolStripMenuItem.Text = "&ke&s";
+            this.kesToolStripMenuItem.Click += new System.EventHandler(this.kesToolStripMenuItem_Click);
             // 
             // kopyalaToolStripMenuItem
             // 
             this.kopyalaToolStripMenuItem.Name = "kopyalaToolStripMenuItem";
-            this.kopyalaToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.kopyalaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.kopyalaToolStripMenuItem.Text = "K&opyala";
+            this.kopyalaToolStripMenuItem.Click += new System.EventHandler(this.kopyalaToolStripMenuItem_Click);
             // 
             // yapıştırToolStripMenuItem
             // 
             this.yapıştırToolStripMenuItem.Name = "yapıştırToolStripMenuItem";
-            this.yapıştırToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.yapıştırToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.yapıştırToolStripMenuItem.Text = "ya&pıştır";
+            this.yapıştırToolStripMenuItem.Click += new System.EventHandler(this.yapıştırToolStripMenuItem_Click);
             // 
             // geriAlToolStripMenuItem
             // 
             this.geriAlToolStripMenuItem.Name = "geriAlToolStripMenuItem";
-            this.geriAlToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.geriAlToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.geriAlToolStripMenuItem.Text = "Geri &Al";
+            this.geriAlToolStripMenuItem.Click += new System.EventHandler(this.geriAlToolStripMenuItem_Click);
             // 
             // ekleToolStripMenuItem
             // 
