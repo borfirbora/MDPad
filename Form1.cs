@@ -130,24 +130,6 @@ namespace MDPad
 
         private void farklıKaydetToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (icerik == true)
-            {
-                DialogResult soru = MessageBox.Show("Yaptığınız değişiklikleri kaydetmek istiyor musunuz?", " MDPad", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (soru == DialogResult.Yes)
-                {
-                    if (dosya_adi == null)
-                    {
-                        farklıKaydetToolStripMenuItem_Click(null, null);
-                    }
-                    else
-                    {
-                        StreamWriter sw = new StreamWriter(dosya_adi, false, Encoding.GetEncoding("utf-8"));
-                        sw.Write(MDEdit.Text);
-                        sw.Flush();
-                        sw.Close();
-                    }
-                }
-            }
                         if (saveFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 dosya_adi = saveFileDialog1.FileName;
